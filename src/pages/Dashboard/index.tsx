@@ -1,15 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import { ResponsiveGrid } from '@alifd/next';
-import Guide from './components/Guide';
 
 const { Cell } = ResponsiveGrid;
 
 const Dashboard = () => {
   return (
     <ResponsiveGrid gap={20}>
-      <Cell colSpan={12}>
-        <Guide />
-      </Cell>
+      <Cell colSpan={12}>hello world</Cell>
     </ResponsiveGrid>
   );
 };

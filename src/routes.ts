@@ -1,16 +1,20 @@
 import { IRouterConfig, lazy } from 'ice';
-import BasicLayout from '@/layouts/BasicLayout';
+import Layout from '@/layout';
 
 const Dashboard = lazy(() => import('@/pages/Dashboard'));
+const NotFound = lazy(() => import('@/pages/NotFound'));
 const routerConfig: IRouterConfig[] = [
   {
     path: '/',
-    component: BasicLayout,
+    component: Layout,
     children: [
       {
         path: '/',
         exact: true,
         component: Dashboard,
+      },
+      {
+        component: NotFound,
       },
     ],
   },

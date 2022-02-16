@@ -10,15 +10,16 @@
     "@alifd/theme-design-pro": "0.x"
   },
   "devDependencies": {
+    "@ali/build-plugin-ice-def": "^0.1.0",
     "@iceworks/spec": "^1.0.0",
+    "@types/node": "^17.0.18",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "build-plugin-ignore-style": "^0.1.0",
     "build-plugin-moment-locales": "^0.1.0",
     "eslint": "^7.30.0",
     "ice.js": "^2.0.0",
-    "stylelint": "^13.2.0",
-    "build-plugin-ignore-style": "^0.1.0",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.2",
-    "@ali/build-plugin-ice-def": "^0.1.0"
+    "stylelint": "^13.2.0"
   },
   "scripts": {
     "start": "icejs start",
