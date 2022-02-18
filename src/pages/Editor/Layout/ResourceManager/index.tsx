@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Input, Button, Grid } from '@alifd/next';
+import { Box, Grid } from '@alifd/next';
 
 import styles from './index.module.scss';
 import TitleBtn from '@/component/TitleBtn';
@@ -16,7 +16,7 @@ export default () => {
 
   const onSelectMedia = (media: File) => {
     setMediaList((list) => {
-      let ret = [...list];
+      const ret = [...list];
       ret.push(media);
       return ret;
     });
@@ -37,8 +37,8 @@ export default () => {
   };
 
   return (
-    <Box direction='column' style={{ width: '100%', height: '100%' }}>
-      <Row align='center' className={styles.header}>
+    <Box direction="column" style={{ width: '100%', height: '100%' }}>
+      <Row align="center" className={styles.header}>
         <Col span={20}>
           <Row>
             <span className={styles.title}>资源</span>
@@ -50,14 +50,13 @@ export default () => {
         </Col>
       </Row>
       <div className={styles.body}>
-        <Box direction='row' wrap>
+        <Box direction="row" wrap>
           {mediaList.map((item, index) => (
             <MediaItem
-              key={index}
               media={item}
               isSelect={index === selectMedia}
               onClick={() => onItemClick(index)}
-            ></MediaItem>
+            />
           ))}
         </Box>
       </div>

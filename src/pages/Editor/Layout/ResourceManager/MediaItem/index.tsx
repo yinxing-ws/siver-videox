@@ -1,5 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { Icon } from '@alifd/next';
+import React from 'react';
 
 import styles from './index.module.scss';
 
@@ -18,8 +17,8 @@ export default ({ media, isSelect, onClick }: Props) => {
     >
       <img
         className={styles.img}
-        src='https://gw.alicdn.com/bao/uploaded/i1/i1/2200783279618/O1CN01RuY5642Kv66BQmrnJ_!!2-item_pic.png'
-      ></img>
+        src="https://gw.alicdn.com/bao/uploaded/i1/i1/2200783279618/O1CN01RuY5642Kv66BQmrnJ_!!2-item_pic.png"
+      />
       <span className={styles.name}>{media.name}</span>
     </div>
   );

@@ -7,7 +7,7 @@ import Timeline from './Layout/Timeline';
 
 export default () => {
   return (
-    <Box direction='column' style={{ width: '100%', height: '100%' }}>
+    <Box direction="column" style={{ width: '100%', height: '100%' }}>
       <div style={{ width: '100%', height: '65%', display: 'flex' }}>
         <div style={{ width: '40%', height: '100%' }}>
           <ResourceManager />

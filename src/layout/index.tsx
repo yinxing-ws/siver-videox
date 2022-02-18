@@ -1,5 +1,4 @@
-import React from 'react';
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { ConfigProvider } from '@alifd/next';
 import Header from './Header';
 
@@ -15,8 +14,8 @@ export default function BasicLayout({
       <Fragment>
         <div className={styles.header}>
           <Header
-            image='https://img.alicdn.com/tfs/TB1.ZBecq67gK0jSZFHXXa9jVXa-904-826.png'
-            text='Logo'
+            image="https://img.alicdn.com/tfs/TB1.ZBecq67gK0jSZFHXXa9jVXa-904-826.png"
+            text="Logo"
           />
         </div>
         <div className={styles.content}>{children}</div>

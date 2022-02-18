@@ -11,7 +11,7 @@ export interface ILogoProps {
 export default function Logo({ image, url }: ILogoProps) {
   return (
     <Link to={url || '/'} className={styles.logo}>
-      {image && <img src={image} alt='logo' />}
+      {image && <img src={image} alt="logo" />}
     </Link>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Input, Button, Icon, Upload } from '@alifd/next';
+import { Icon, Upload } from '@alifd/next';
 
 import styles from './index.module.scss';
 
@@ -16,12 +16,12 @@ export default ({ onSelect: propsOnSelect }: Props) => {
   return (
     <Upload
       autoUpload={false}
-      listType='image'
+      listType="image"
       onSelect={onSelect}
       value={[]}
-      accept='.mp4'
+      accept=".mp4"
     >
-      <Icon type='add' className={styles.icon} size='small' />
+      <Icon type="add" className={styles.icon} size="small" />
     </Upload>
   );
 };
