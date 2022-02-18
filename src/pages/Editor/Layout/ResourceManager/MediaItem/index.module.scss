@@ -1,0 +1,42 @@
+.wrapper {
+  margin: 10px;
+  width: 100px;
+  height: 120px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  width: 90px;
+  height: 90px;
+  margin-top: 5px;
+  object-fit: contain;
+}
+
+.name {
+  max-width: 90px;
+  margin-top: 5px;
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  color: #fff;
+  transform: translate(50%, -50%) scale(0.8);
+  z-index: 5;
+}
